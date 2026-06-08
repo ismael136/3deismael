@@ -1,49 +1,146 @@
-<html>
+<html lang="es">
 <head>
-<title>imagenes y multimedia</title>
+    <meta charset="UTF-8">
+    <title>Práctica de Continentes</title>
+    <style>
+        body {
+            font-family: 'Papyrus', fantasy;
+            background-color: #f0f8ff;
+            background-image: url('estrellas.gif');
+        }
+
+        h1 {
+            color: DarkRed;
+            background-color: Snow;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table {
+            border: 4px solid RoyalBlue;
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 95%;
+        }
+
+        th, td {
+            border: 2px solid RoyalBlue;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        .america { background-color: PaleGreen; color: LimeGreen; }
+        .europa { background-color: Violet; color: Turquoise; }
+        .asia { background-color: Sienna; color: Salmon; }
+        .africa { background-color: YellowGreen; color: Wheat; }
+        .oceania { background-color: LightSkyBlue; color: Orchid; }
+        .antartida { background-color: DarkGray; color: Cyan; }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-top: 0;
+        }
+    </style>
 </head>
-<body background="imagen_y_multimedia/oleo3.jpg">
+<body>
 
-<h1>im&aacutegenes</h1>
-<img src="imagen_y_multimedia/HK_CA.jpg">
-<img src="imagen_y_multimedia/dia.png">
-<img src="imagen_y_multimedia/HK_CA.jpg" width="100" height="150">
-<img src="imagen_y_multimedia/HK_CA.jpg" width="100" height="150" border="1"><br>
-<img src="imagen_y_multimedia/HK_CA.jpg" width="200" height="250">hello kitty capitan america<br>
-<img src="imagen_y_multimedia/HK_CA.jpg" width="200" height="250" align="right">hello kitty capitan america<br>
+    <h1>
+        <marquee behavior="alternate">Continentes</marquee>
+    </h1>
 
-<center><img src="imagen_y_multimedia/HK_CA.jpg" width="100" height="150" border="1"></center><br>
-<img src="imagen_y_multimedia/HK_CA.jpg" width="100" height="150" align="bottom">hello kitty capitan america (abajo)<br>
-<p align="right">hello kitty capitan america <img src="imagen_y_multimedia/HK_CA.jpg" width="100" height="150"> hello kitty capitan america (abajo)</p><br>
-<img src="imagen_y_multimedia/HK_CA.jpg" width="100" height="150" align="top">hello kitty capitan america (arriba)<br>
-<img src="imagen_y_multimedia/HK_CA.jpg" width="100" height="150" align="middle">hello kitty capitan america (en medio)<br>
-<center>hello kitty capitan america <img src="imagen_y_multimedia/HK_CA.jpg" width="100" height="150" align="middle">hello kitty capitan america (en medio)</center><br>
-<img src="imagen_y_multimedia/HK.gif"><br>
+    <table>
+        <tr>
+            <th class="america"><h3>América</h3></th>
+            <th class="europa"><h3>Europa</h3></th>
+            <th class="asia"><h3>Asia</h3></th>
+            <th class="africa"><h3>África</h3></th>
+            <th class="oceania"><h3>Oceanía</h3></th>
+            <th class="antartida"><h3>Antártida</h3></th>
+        </tr>
 
-<h1><marquee>Bienvenidos</marquee></h1>
+       
+        <tr>
+            <td ="america">
+                <ol type="1">
+                    <li>Canadá</li>
+                    <li>Belice</li>
+                    <li>Nicaragua</li>
+                    <li>Venezuela</li>
+                    <li>Chile</li>
+                </ol>
+            </td>
+            <td ="europa">
+                <ul style="list-style-type: disc;">
+                    <li>Bulgaria</li>
+                    <li>Dinamarca</li>
+                    <li>Noruega</li>
+                    <li>Ucrania</li>
+                    <li>Irlanda</li>
+                </ul>
+            </td>
+            <td ="asia">
+                <ol type="A">
+                    <li>Filipinas</li>
+                    <li>Armenia</li>
+                    <li>Birmania</li>
+                    <li>Malasia</li>
+                    <li>Vietnam</li>
+                </ol>
+            </td>
+            <td ="africa">
+                <ul style="list-style-type: square;">
+                    <li>Ghana</li>
+                    <li>Angola</li>
+                    <li>Zimbabue</li>
+                    <li>Uganda</li>
+                    <li>Kenia</li>
+                </ul>
+            </td>
+            <td ="oceania">
+                <ol type="I">
+                    <li>Fiyi</li>
+                    <li>Nauru</li>
+                    <li>Tonga</li>
+                    <li>Nueva Zelanda</li>
+                    <li>Palaos</li>
+                </ol>
+            </td>
+            <td ="antartida">
+                <ul style="list-style-type: circle;">
+                    <li>La Antártida argentina (Argentina)</li>
+                    <li>La dependencia Ross (Nueva Zelanda)</li>
+                    <li>Adelia Land (Francia)</li>
+                    <li>Territorio Antártico Australiano (Australia)</li>
+                    <li>Isla Pedro I o Tierra de la Reina Maud (Noruega)</li>
+                    <li>Antártida Chilena (Chile)</li>
+                    <li>Mary Byrd (Sin pertenencia)</li>
+                </ul>
+            </td>
+        </tr>
+ <tr>
+            <td ="america" style="text-align:center;">
+                <img src="mapa_america.jpg" width="150" height="180" alt="Mapa América">
+            </td>
+            <td ="europa" style="text-align:center;">
+                <img src="mapa_europa.jpg" width="150" height="180" alt="Mapa Europa">
+            </td>
+            <td ="asia" style="text-align:center;">
+                <img src="mapa_asia.jpg" width="150" height="180" alt="Mapa Asia">
+            </td>
+            <td ="africa" style="text-align:center;">
+                <img src="mapa_africa.jpg" width="150" height="180" alt="Mapa África">
+            </td>
+            <td ="oceania" style="text-align:center;">
+                <img src="mapa_oceania.jpg" width="150" height="180" alt="Mapa Oceanía">
+            </td>
+            <td ="antartida" style="text-align:center;">
+                <img src="mapa_antartida.jpg" width="150" height="180" alt="Mapa Antártida">
+            </td>
+        </tr>
 
-<hr width="50%" color="aqua" size="6">
-<font color="red" size="7" face="arial">Video en pantalla</font><br>
-<embed src="imagen_y_multimedia/Backyardigans.mp4" width="300" height="300"><br>
-
-<hr width="50%" color="aqua" size="6">
-<font color="red" size="7" face="arial">Video en pantalla sin comenzar</font><br>
-<embed src="imagen_y_multimedia/Backyardigans.mp4" width="300" height="300" autostart="false">
-
-<hr width="50%" color="aqua" size="6">
-<font color="red" size="7" face="arial">Video en pantalla sin controles</font><br>
-<img dynsrc="imagen_y_multimedia/Backyardigans.mp4" autoplay>
-
-<hr width="50%" color="aqua" size="6">
-<font color="red" size="7" face="arial">Video en pantalla al pasar el mouse</font><br>
-<img dynsrc="imagen_y_multimedia/Backyardigans.mp4" start="mouseover">
-
-<hr width="50%" color="aqua" size="6">
-<center>
-<font color="red" size="7" face="arial">Video con hipervínculo</font><br>
-<a href="imagen_y_multimedia/Backyardigans.mp4">Vídeo</a>
-</center>
-<br><br><br><br>
+    </table>
 
 </body>
 </html>
+
